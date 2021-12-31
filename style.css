@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-size: 100%;
+    font-family: 'Mukta', sans-serif;
+    color: #FFFFFF;
+    background-color: #15202B;
+    display: flex;
+}
+
+a, a:visited, a:hover, a:active {
+    color: inherit;
+}
+
+.cabecalho {
+    display: flex;
+    flex-grow: 3;
+    height: 100%;
+    justify-content: flex-end;
+}
+.cabecalho-imagem-div {
+    padding: 14px 14px 5px 14px;
+    border-radius: 100%;
+    transition-property: background-color;
+    transition-duration: 0.2s;
+}
+
+.cabecalho-imagem-div:hover {
+    background-color: rgba(29, 155, 240, 0.1);
+    cursor: pointer;
+}
+
+.cabecalho-imagem {
+    height: 32px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 50%;
+    align-items: flex-start;
+    margin: 10px 10px 0 0;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 12px 30px 12px 12px;
+    border-radius: 50px;
+    transition-property: background-color;
+    transition-duration: 0.2s;
+}
+
+.menu-item:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+}
+
+.menu-item-texto {
+    font-size: 22px;
+}
+
+.menu-item-icone {
+    font-size: 34px !important;
+}
+
+.menu-botao {
+    font-family: 'Mukta', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #FFFFFF;
+    background-color: #7856FF;
+    border-style: none;
+    border-radius: 50px;
+    margin-top: 16px;
+    width: 225px;
+    height: 52px;
+    transition-property: background-color;
+    transition-duration: 0.2s;
+}
+
+.menu-botao:hover {
+    cursor: pointer;
+    background-color: rgb(108, 77, 230);
+}
+
+.selected {
+    font-weight: 700;
+}
+
+.principal {
+    flex-grow: 5;
+    display: flex;
+    margin-top: 10px;
+}
+
+.titulo {
+    padding: 0 14px;
+}
+
+.tweets {
+    flex-grow: 5;
+    border-left: 0.1px solid gray;
+    border-right: 0.1px solid gray;
+}
+
+.trending {
+    flex-grow: 4;
+}
