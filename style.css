@@ -73,25 +73,29 @@ a, a:visited, a:hover, a:active {
     font-size: 34px !important;
 }
 
-.menu-botao {
+.botao-tweetar {
     font-family: 'Mukta', sans-serif;
-    font-size: 20px;
-    font-weight: 700;
     color: #FFFFFF;
     background-color: #7856FF;
     border-style: none;
     border-radius: 50px;
-    margin-top: 16px;
-    width: 225px;
-    height: 52px;
     transition-property: background-color;
     transition-duration: 0.2s;
 }
 
-.menu-botao:hover {
+.botao-tweetar:hover {
     cursor: pointer;
     background-color: rgb(108, 77, 230);
 }
+
+.menu-botao {
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 16px;
+    width: 225px;
+    height: 52px;
+}
+
 
 .selected {
     font-weight: 700;
@@ -111,6 +115,95 @@ a, a:visited, a:hover, a:active {
     flex-grow: 5;
     border-left: 0.1px solid gray;
     border-right: 0.1px solid gray;
+}
+
+.novo-tweet {
+    padding: 10px 14px 0px 14px;
+    display: flex;
+}
+
+.imagem-circular {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.novo-tweet-imagem {
+    margin-right: 12px;
+    padding-top: 4px;
+}
+
+.novo-tweet-imagem-perfil {
+    height: 50px;
+}
+
+.novo-tweet-edicao {
+    width: 100%;
+}
+
+.novo-tweet-icone {
+    color: #7856FF;
+}
+
+.novo-tweet-edicao-input-div {
+    padding: 12px 0px;
+}
+
+.novo-tweet-edicao-input {
+    border-style: none;
+    background-color: rgba(255, 255, 255, 0);
+    font-family: 'Mukta', sans-serif;
+    font-size: 20px;
+    width: 100%;
+    word-break: break-all;
+    resize: none;
+    overflow-wrap: break-word;
+}
+
+.novo-tweet-edicao-input:focus {
+    outline: none;
+    color: white;
+}
+
+.novo-tweet-edicao-input::-webkit-input-placeholder {
+    color: rgb(116, 116, 116, 1.0);
+}
+
+.novo-tweet-opcoes {
+    display: flex;
+}
+
+.novo-tweet-icones {
+    display: flex;
+    gap: 10px;
+}
+
+.novo-tweet-botao-div {
+    display: flex;
+    width: 100%;
+    justify-content: end;
+}
+
+.novo-tweet-botao {
+    font-size: 17px;
+    font-weight: 700;
+    width: 90px;
+    height: 36px;
+    margin-left: 12px;
+}
+
+.novo-tweet-botao:disabled {
+    opacity: 0.5;
+    cursor: default;
+}
+
+.novo-tweet-botao:disabled:hover {
+    background-color: #7856FF;
 }
 
 .trending {
