@@ -25,6 +25,7 @@ a, a:visited, a:hover, a:active {
     height: 100%;
     justify-content: flex-end;
 }
+
 .cabecalho-imagem-div {
     padding: 14px 14px 5px 14px;
     border-radius: 100%;
@@ -113,13 +114,14 @@ a, a:visited, a:hover, a:active {
 
 .tweets {
     flex-grow: 5;
-    border-left: 0.1px solid gray;
-    border-right: 0.1px solid gray;
+    border-left: 1px solid rgba(105, 105, 105, 0.589);
+    border-right: 1px solid rgba(105, 105, 105, 0.589);
 }
 
 .novo-tweet {
-    padding: 10px 14px 0px 14px;
+    padding: 10px 14px 14px 14px;
     display: flex;
+    border-bottom: 1px solid rgba(105, 105, 105, 0.589);
 }
 
 .imagem-circular {
@@ -146,6 +148,16 @@ a, a:visited, a:hover, a:active {
     width: 100%;
 }
 
+.novo-tweet-opcoes {
+    display: flex;
+    justify-content: space-between;
+}
+
+.novo-tweet-icones {
+    display: flex;
+    align-items: center;
+}
+
 .novo-tweet-icone {
     color: #7856FF;
 }
@@ -159,6 +171,7 @@ a, a:visited, a:hover, a:active {
     background-color: rgba(255, 255, 255, 0);
     font-family: 'Mukta', sans-serif;
     font-size: 20px;
+    height: 50px;
     width: 100%;
     word-break: break-all;
     resize: none;
@@ -185,7 +198,6 @@ a, a:visited, a:hover, a:active {
 
 .novo-tweet-botao-div {
     display: flex;
-    width: 100%;
     justify-content: end;
 }
 
