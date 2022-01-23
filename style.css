@@ -23,7 +23,8 @@ a, a:visited, a:hover, a:active {
     display: flex;
     flex-grow: 3;
     height: 100%;
-    justify-content: flex-end;
+    justify-content: end;
+    padding-right: 10px;
 }
 
 .cabecalho-imagem-div {
@@ -140,7 +141,7 @@ a, a:visited, a:hover, a:active {
     padding-top: 4px;
 }
 
-.novo-tweet-imagem-perfil {
+.imagem-perfil {
     height: 50px;
 }
 
@@ -185,10 +186,6 @@ a, a:visited, a:hover, a:active {
 
 .novo-tweet-edicao-input::-webkit-input-placeholder {
     color: rgb(150, 150, 150);
-}
-
-.novo-tweet-opcoes {
-    display: flex;
 }
 
 .novo-tweet-icones {
@@ -236,9 +233,13 @@ a, a:visited, a:hover, a:active {
     align-items: center;
     gap: 15px;
     background-color: rgb(37, 51, 65);
-    height: 40px;
+    height: 50px;
     padding-left: 20px;
     border-radius: 50px;
+}
+
+.buscar-div:focus-within {
+    border: 1px solid #7856FF;
 }
 
 .buscar-input {
@@ -288,13 +289,25 @@ a, a:visited, a:hover, a:active {
 
 .tweet {
     display: flex;
+    gap: 14px;
+    padding: 10px;
+    width: 100%;
+    border-bottom: 1px solid rgba(105, 105, 105, 0.589);
+}
+
+.tweet-content {
     width: 100%;
 }
 
 .tweet-usuario {
     display: flex;
     flex-direction: row;
-    gap: 4px;
+    justify-content: space-between;
+}
+
+.tweet-usuario-info {
+    display: flex;
+    gap: 6px;
 }
 
 .tweet-usuario-nome {
@@ -302,14 +315,41 @@ a, a:visited, a:hover, a:active {
 }
 
 .tweet-usuario-at {
-    color: rgb(150, 150, 150);
+    color: #969696;
 }
 
 .tweet-usuario-time {
-    color: rgb(150, 150, 150);
+    color: #969696;
 }
 
 .tweet-usuario-more {
-    color: rgb(150, 150, 150);
-    justify-self: flex-end;
+    color: #969696;
+    justify-self: end;
+}
+
+.tweet-text > {
+    max-width: 420px;
+    width: 100%;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.tweet-botoes {
+    margin-top: 8px;
+    width: 85%;
+    color: #969696;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tweet-botao {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.tweet-botao-num {
+    font-size: 16px;
 }

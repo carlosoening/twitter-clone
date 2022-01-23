@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Round">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined">
     <link rel="icon" href="assets/twitter-blue.svg">
-    <!-- <script src="https://kit.fontawesome.com/6ac1297995.js" crossorigin="anonymous"></script> -->
+    <script src="https://kit.fontawesome.com/6ac1297995.js" crossorigin="anonymous"></script>
+    <script src="script.js" defer></script>
     <title>Twitter Clone</title>
 </head>
 <body>
@@ -61,7 +62,7 @@
             <div class="novo-tweet">
                 <div class="novo-tweet-imagem">
                     <div class="imagem-circular">
-                        <img class="novo-tweet-imagem-perfil" src="assets/knight.jpg" alt="Imagem de Perfil">
+                        <img class="imagem-perfil" src="assets/knight.jpg" alt="Imagem de Perfil">
                     </div>
                 </div>
                 <div class="novo-tweet-edicao">
@@ -84,19 +85,53 @@
                 </div>
             </div>
             <div class="tweet">
-                <div class="tweet-imagem-perfil-div"></div>
+                <div class="tweet-imagem-perfil-div">
+                    <div class="imagem-circular">
+                        <img class="imagem-perfil" src="assets/knight.jpg" alt="Imagem de Perfil">
+                    </div>
+                </div>
                 <div class="tweet-content">
                     <div class="tweet-usuario">
-                        <div class="tweet-usuario-nome">keio</div>
-                        <div class="tweet-usuario-at">@keiozinn</div>
-                        <span>·</span>
-                        <div class="tweet-usuario-time">20 min</div>
+                        <div class="tweet-usuario-info">
+                            <div class="tweet-usuario-nome">keio</div>
+                            <div class="tweet-usuario-at">@keiozinn</div>
+                            <span>·</span>
+                            <div class="tweet-usuario-time">20 min</div>
+                        </div>
                         <div class="tweet-usuario-more">
                             <span class="material-icons-outlined">more_horiz</span>
                         </div>
                     </div>
-                    <div class="tweet-text"></div>
-                    <div class="tweet-botoes"></div>
+                    <div class="tweet-text">
+                        <p>
+                            to meio por fora.
+                        </p>
+                        <br>
+                        <p>quem cês acham que leva esse CBLOL?</p>
+                    </div>
+                    <div class="tweet-botoes">
+                        <div class="tweet-botao">
+                            <i class="far fa-comment"></i>
+                            <div class="tweet-botao-num">
+                                <span>15</span>
+                            </div>
+                        </div>
+                        <div class="tweet-botao">
+                            <i class="fas fa-retweet"></i>
+                            <div class="tweet-botao-num">
+                                <span>5</span>
+                            </div>
+                        </div>
+                        <div class="tweet-botao">
+                            <i class="far fa-heart"></i>
+                            <div class="tweet-botao-num">
+                                <span>482</span>
+                            </div>
+                        </div>
+                        <div class="tweet-botao">
+                            <span class="material-icons-outlined">ios_share</span>
+                        </div>                        
+                    </div>
                 </div>
             </div>       
         </section>
