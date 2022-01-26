@@ -157,10 +157,20 @@ a, a:visited, a:hover, a:active {
 .novo-tweet-icones {
     display: flex;
     align-items: center;
+    gap: 5px;
 }
 
 .novo-tweet-icone {
     color: #7856FF;
+    padding: 6px;
+    border-radius: 50%;
+    transition-property: background-color;
+    transition-duration: 0.2s;
+}
+
+.novo-tweet-icone:hover {
+    cursor: pointer;
+    background-color: rgb(25, 39, 52);
 }
 
 .novo-tweet-edicao-input-div {
@@ -186,11 +196,6 @@ a, a:visited, a:hover, a:active {
 
 .novo-tweet-edicao-input::-webkit-input-placeholder {
     color: rgb(150, 150, 150);
-}
-
-.novo-tweet-icones {
-    display: flex;
-    gap: 10px;
 }
 
 .novo-tweet-botao-div {
